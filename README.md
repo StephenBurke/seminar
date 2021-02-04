@@ -1,1 +1,1 @@
-# seminar-linux
+# seminar
