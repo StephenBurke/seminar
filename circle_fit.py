@@ -152,19 +152,6 @@ def least_squares_circle(coords):
     return xc, yc, R, residu
 
 def plot_data_circle(x, y, xc, yc, R):
-    """
-    Plot data and a fitted circle.
-    Inputs:
-
-        x : data, x values (array)
-        y : data, y values (array)
-        xc : fit circle center (x-value) (float)
-        yc : fit circle center (y-value) (float)
-        R : fir circle radius (float)
-
-    Output:
-        None (generates matplotlib plot).
-    """
     f = plt.figure(facecolor='white')
     plt.axis('equal')
 
