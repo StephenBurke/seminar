@@ -109,7 +109,7 @@ def hyper_fit(coords, IterMax=99, verbose=False):
         print('Sigma computed: ', s)
     return x, y, r, s
 
-def least_squares_circle(coords):
+def least_squares_circle(coords, radius):
     """
     Circle fit using least-squares solver.
     Inputs:
@@ -146,10 +146,11 @@ def least_squares_circle(coords):
     center_estimate = x_m, y_m
     center, _ = optimize.leastsq(f, center_estimate, args=(x,y))
     xc, yc = center
-    Ri       = calc_R(x, y, *center)
-    R        = Ri.mean()
-    residu   = np.sum((Ri - R)**2)
-    return xc, yc, R, residu
+    #Ri       = calc_R(x, y, *center)
+    #R        = Ri.mean()
+    R = radius
+    #residu   = np.sum((Ri - R)**2)
+    return xc, yc, R#, residu
 
 def plot_data_circle(x, y, xc, yc, R):
     """
