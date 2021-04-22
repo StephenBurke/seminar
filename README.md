@@ -4,4 +4,6 @@
 ### Libraries
 * csv
 * pandas
-* matplotlib.pylot
+* matplotlib.pyplot
+* numpy
+* circle-fit
