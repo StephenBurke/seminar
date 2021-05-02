@@ -1,11 +1,12 @@
 # seminar
-## About
+
 Program that applies a circle-fit algoritm to point-clounds.
-### Requirements
-* Python
-### Libraries
-* csv
-* pandas
-* matplotlib.pyplot
-* numpy
-* circle-fit
+
+## Requirements
+
+* Python 3
+
+## Authors
+
+[Stephen Burke](https://github.com/StephenBurke)
+[Sam Nelson](https://github.com/SamNel2000)
